@@ -1,8 +1,12 @@
 <resources>
-    <string name="app_name">Project</string>
+    <string name="app_name">ระบบการจัดการครุภัณฑ์</string>
     <string name="title_asset_detail">Asset Detail</string>
 
     <string name="login_invaid">Username หรือ รหัสผ่านผิดพลาด</string>
     <string name="user_waiting_approve">Account นี้กำลังรอการยืนยันจากผู้ดูแลระบบ</string>
     <string name="user_account_disabled">Account นี้ถูกปฏิเสธการเข้าใช้งาน</string>
+
+        <color name="colorbg1">#ff5d61</color>
+
+
 </resources>
