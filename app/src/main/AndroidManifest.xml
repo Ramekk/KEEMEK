@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="rus.ramek.project">
 
-          <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -17,7 +17,7 @@
 
 
 
-        <intent-filter>
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />

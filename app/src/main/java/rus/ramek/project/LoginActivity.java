@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import retrofit2.Call;
@@ -17,7 +18,8 @@ import rus.ramek.project.state.UserStatus;
 
 public class LoginActivity extends AppCompatActivity {
     EditText UsernameEt, PasswordEt;
-    Button loginButton;
+    //Button loginButton;
+    ImageView loginButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +28,8 @@ public class LoginActivity extends AppCompatActivity {
 
         UsernameEt = (EditText) findViewById(R.id.etUsername);
         PasswordEt = (EditText) findViewById(R.id.etPassword);
-        loginButton = (Button) findViewById(R.id.login_button);
+
+        loginButton = (ImageView) findViewById(R.id.login_button);
 
 
 

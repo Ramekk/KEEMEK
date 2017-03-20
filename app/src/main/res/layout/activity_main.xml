@@ -1,61 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="match_parent"
     tools:context="rus.ramek.project.LoginActivity"
-    android:background="@drawable/bg"
-    tools:backgroundTintMode="screen">
+    android:background="@color/colorPrimary"
+    tools:backgroundTintMode="screen"
+    android:elevation="1dp">
 
-
-    <LinearLayout
-        android:id="@+id/container_toolbar"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:orientation="vertical">
-
-        <include
-            android:id="@+id/toolbar"
-            layout="@layout/toolbar" />
-
-    </LinearLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ระบบการจัดการครุภัณฑ์"
-        android:id="@+id/textView18"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:textColor="#ffffff" />
 
     <LinearLayout
         android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:weightSum="1"
-        android:background="@color/bglogin"
-        android:layout_marginTop="150dp"
+        android:background="@drawable/form2"
         android:layout_below="@+id/textView18"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp">
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="90dp"
+        android:layout_width="450dp"
+        android:layout_height="420dp">
+
+        <ImageView
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/dd"
+            android:id="@+id/imageView3"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/linearLayout2"
+            android:layout_alignEnd="@+id/linearLayout2"
+            android:src="@drawable/dd"
+            android:layout_marginTop="105dp"
+            android:layout_width="match_parent" />
 
         <LinearLayout
             android:orientation="horizontal"
-            android:layout_width="match_parent"
             android:background="@color/loginuser"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="30dp">
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="240dp"
+            android:layout_marginTop="3dp">
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:id="@+id/imageView"
-                android:src="@drawable/icon1"
+                android:src="@drawable/user"
                 android:layout_weight="1"
                 android:layout_marginRight="10dp"
                 android:layout_height="30dp"
@@ -77,24 +67,26 @@
                 android:background="@color/loginuser"
                 android:paddingBottom="10dp"
                 android:paddingTop="10dp"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:textColorLink="@color/font"
+                android:textColorHint="@color/font"
+                android:textColor="@color/font" />
 
         </LinearLayout>
 
 
         <LinearLayout
             android:orientation="horizontal"
-            android:layout_width="match_parent"
+            android:layout_width="240dp"
             android:background="@color/loginuser"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="70dp"
             android:layout_marginRight="20dp">
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:id="@+id/imageView2"
-                android:src="@drawable/icon2"
+                android:src="@drawable/pass"
                 android:layout_weight="1"
                 android:layout_marginRight="10dp"
                 android:layout_height="30dp"
@@ -102,7 +94,7 @@
                 android:layout_marginLeft="10dp" />
 
             <EditText
-                android:layout_width="match_parent"
+                android:layout_width="240dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/etPassword"
                 android:hint="Password"
@@ -116,13 +108,15 @@
                 android:background="@color/loginuser"
                 android:paddingBottom="10dp"
                 android:paddingTop="10dp"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:textColor="@color/font"
+                android:textColorLink="@color/font"
+                android:textColorHint="@color/font" />
 
         </LinearLayout>
 
 
         <ImageView
-            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Login"
             android:id="@+id/login_button"
@@ -132,8 +126,10 @@
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
             android:src="@drawable/buttonlogin"
-            android:layout_marginTop="20dp" />
+            android:layout_marginLeft="70dp"
+            android:layout_width="240dp" />
     </LinearLayout>
 
 
 </RelativeLayout>
+
