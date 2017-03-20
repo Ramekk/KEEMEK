@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.google.zxing.integration.android.IntentIntegrator;
@@ -20,7 +21,8 @@ import rus.ramek.project.apimodel.LoginResponseModel;
 
 public class UserAreaActivity extends AppCompatActivity {
     private static final String INTENT_PARAM_LOGIN_MODEL = "INTENT_PARAM_LOGIN_MODEL";
-    Button logoutButton;
+    //Button logoutButton;
+    ImageView logoutButton;;
 
 
     private LoginResponseModel loginModel;
@@ -45,7 +47,7 @@ public class UserAreaActivity extends AppCompatActivity {
         testButton = (ImageButton) findViewById(R.id.testButton);
         scanQrCodeButton.setOnClickListener(onScanQrCodeClickListener);
         testButton.setOnClickListener(onOpenWebViewClickListener);
-        logoutButton = (Button) findViewById(R.id.logout_button);
+        logoutButton = (ImageView) findViewById(R.id.logout_button);
 
         logoutButton.setOnClickListener(new View.OnClickListener(){
             @Override
